@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>password</title>
+<style>
+body {
+background-color:lightblue;
+padding:30px;
+}
+input[tupe="password"] {
+background-color:blue;
+color:orange;
+}
+</style>
+<script>
+function checkPassword() {
+var password = document.getElementById("passwordBox");
+var passwordText = password.value;
+if(passwordText == "Ernest300") {
+return true;
+}else{
+alert("Incorrect password!");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30pt;">The Monk Diamond Discovery</p>
+<p>please enter the passward to veiw this web page.</p>
+<p>passward:<input id="passwordBox" type="password"/></p>
+<a href="breaks.html" onclick="return checkPassword();">Click here To submit passward and go To The Diamond Discovery web page</a>
+</body>
+</html>
